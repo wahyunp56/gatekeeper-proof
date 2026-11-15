@@ -1,6 +1,1 @@
-{
-  "rewrites": [
-    { "source": "/health", "destination": "/api/health" },
-    { "source": "/gatekeeper", "destination": "/api/gatekeeper" }
-  ]
-}
+{"functions":{"api/gatekeeper.js":{"includeFiles":"circuits/**","maxDuration":60},"api/health.js":{"includeFiles":"circuits/**","maxDuration":30}},"rewrites":[{"destination":"/api/health","source":"/health"},{"destination":"/api/gatekeeper","source":"/gatekeeper"}]}
